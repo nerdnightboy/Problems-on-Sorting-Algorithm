@@ -12,9 +12,9 @@ void swapZeroesToEnd(vector<int> &v){
         while(j!=i){
             if(v[j] == 0 && v[j+1] != 0){
                 swap(v[j], v[j+1]);
-                bool flag = true;
+                flag = true;
             }
-            i++;
+            j++;
         }
         if(!flag) break;
     }
